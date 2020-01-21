@@ -1,48 +1,88 @@
 {
-	"firefox": {
-		"default": "latest",
-		"versions": {
-			"latest": {
-				"image": "selenoid/firefox",
-				"port": "4444",
-				"path": "/wd/hub",
-				"tmpfs": {"/tmp":"size=512m"}
-			}
-		}
+	"firefox":{
+	   "default":"latest",
+	   "versions":{
+		  "latest":{
+			 "image":"selenoid/firefox",
+			 "port":"4444",
+			 "path":"/wd/hub",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  }
+	   }
 	},
-	"chrome": {
-		"default": "latest",
-		"versions": {
-			"latest": {
-				"image": "selenoid/chrome",
-				"port": "4444",
-				"tmpfs": {"/tmp":"size=512m"}
-			},
-			"chrome_mobile_79": {
-					"image": "selenoid/chrome-mobile:79.0",
-					"port": "4444",
-					"tmpfs": {"/tmp":"size=512m"}
-			}
-		}
+	"chrome":{
+	   "default":"latest",
+	   "versions":{
+		  "latest":{
+			 "image":"selenoid/chrome",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  },
+		  "chrome_mobile_79":{
+			 "image":"selenoid/chrome-mobile:79.0",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  },
+		  "chrome_mobile_75":{
+			 "image":"selenoid/chrome-mobile:75.0",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  }
+	   }
 	},
-	"android_native": {
-			"default": "9.0",
-			"versions": {
-					"9.0": {
-							"image": "selenoid/android:9.0",
-							"port": "4444",
-							"tmpfs": {"/tmp":"size=512m"}
-					}
-			}
-	},
-	"chrome_mobile": {
-			"default": "chrome_mobile_79",
-			"versions": {
-					"chrome_mobile_79": {
-							"image": "selenoid/chrome-mobile:79.0",
-							"port": "4444",
-							"tmpfs": {"/tmp":"size=512m"}
-					}
-			}
+	"android_native":{
+	   "default":"10.0",
+	   "versions":{
+		  "10.0":{
+			 "image":"selenoid/android:10.0",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  },
+		  "9.0":{
+			 "image":"selenoid/android:9.0",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  },
+		  "8.1":{
+			 "image":"selenoid/android:8.1",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  },
+		  "8.0":{
+			 "image":"selenoid/android:8.0",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  },
+		  "7.1":{
+			 "image":"selenoid/android:7.1",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  },
+		  "5.1":{
+			 "image":"selenoid/android:5.1",
+			 "port":"4444",
+			 "tmpfs":{
+				"/tmp":"size=512m"
+			 }
+		  }
+	   }
 	}
-}
+ }
